@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: #839E5A;
+    --secondary-color: #E97F2E;
+    --accent1-color: #33A2C9;
+    --accent2-color: #242D26;
+
+    --heading-font: "Open Sans", sans-serif;
+    --paragraph-font: "Open Sans", sans-serif;
+
+    --nav-background-color: var(--primary-color);  
+    --nav-link-color: var(--secondary-color); 
+    --nav-hover-link-color: var(--accent1-color); 
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+body {
+    font-family: var(--paragraph-font);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+p {
+    color: var(--secondary-color);
+}
+
+header > nav > a {
+
+    text-decoration: none;
+     
+}
+
+.logo {
+    width: 200px;
+    
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero > h1, article {
+    position: absolute;
+}
+
+.hero > h1 {
+    width: auto;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 20px;
+    left: 30rem;
+}
+
+.hero > article {
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 65rem;
+
+    top: 20rem;
+    left: 5rem;
+}
+
+.hero > article > img {
+    width: 200px;
+    float: right;
+}
