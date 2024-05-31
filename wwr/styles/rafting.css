@@ -31,11 +31,22 @@ p {
     color: var(--secondary-color);
 }
 
+header {
+    margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 1000px;
+}
+
 header > nav > a {
 
     text-decoration: none;
      
 }
+
+
 
 .logo {
     width: 200px;
@@ -76,4 +87,102 @@ header > nav > a {
 .hero > article > img {
     width: 200px;
     float: right;
+}
+
+.navigation {
+	display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 0px 10px 0px;
+    
+	list-style: none;
+    width: 100%;
+}
+
+.navigation li {
+	flex: 1 1 100%;
+}
+
+.navigation a {
+	display: block;
+	color: navy;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.history > p {
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+
+.adventure {
+    text-align: center; 
+    padding: 20px 0px 20px 0px;
+}
+
+.imagesAdventure {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 10px;
+    justify-items: center; 
+    align-items: center; 
+}
+
+.imagesAdventure figure {
+    margin: 0; 
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.imagesAdventure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagesAdventure figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 20px 10px 20px;
+    background-color: #f1f1f1; 
+}
+
+footer p {
+    margin: 0; 
+    text-align: center; 
+    flex: 1; 
+}
+
+.sociallinks {
+    display: flex;
+    gap: 10px; 
+}
+
+.sociallinks a img {
+    width: 24px; 
+    height: 24px; 
 }
