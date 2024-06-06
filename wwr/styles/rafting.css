@@ -287,3 +287,8 @@ h1 {
 .form-group button:hover {
     background-color: #45a049;
 }
+
+.map {
+    border:0;  
+    
+}
