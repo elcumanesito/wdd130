@@ -157,7 +157,7 @@ header > nav > a {
     display: block;
 }
 
-.imagesAdventure figcaption {
+.imagesAdventure figcaption, .employesImg figcaption {
     margin-top: 5px;
     font-size: 14px;
     color: #333;
@@ -185,4 +185,106 @@ footer p {
 .sociallinks a img {
     width: 24px; 
     height: 24px; 
+}
+
+.contact {
+    
+    padding: 20px 0px 20px 0px;
+}
+
+.employesImg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px;
+    justify-items: center; 
+    align-items: center; 
+}
+
+.employesImg img {
+
+    max-height: 150px;
+    max-width: 150px;
+    height: auto;
+    display: block;
+   
+}
+
+.employesImg figure { 
+    
+    margin: 0; 
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.contactMain {
+    max-width: 1200px;
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    
+}
+
+.contactIcons {
+    display: flex;
+    align-items: center;
+    
+}
+
+.contactIcons  i {
+    margin-right: 30px;
+   
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+.quiz-form {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
 }
