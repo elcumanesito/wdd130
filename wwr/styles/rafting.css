@@ -290,5 +290,7 @@ h1 {
 
 .map {
     border:0;  
+    width:300px;
+    height:250px;
     
 }
